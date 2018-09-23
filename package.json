@@ -1,0 +1,26 @@
+{
+  "name": "web",
+  "version": "1.0.0",
+  "description": "Personal webpage",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/davidramirezm30/Web.git"
+  },
+  "author": "David Ramírez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/davidramirezm30/Web/issues"
+  },
+  "homepage": "https://github.com/davidramirezm30/Web#readme",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.3.1",
+    "aos": "^2.3.3",
+    "bootstrap": "^3.3.7",
+    "jquery": "^3.3.1",
+    "npm": "^6.4.1"
+  }
+}
