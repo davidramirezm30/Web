@@ -5,7 +5,7 @@ body{
 }
 
 .section {
-  padding: 0px 0;
+  padding-top: 50px;
   position: relative;
   /*background: #FFFFFF;*/
 }
@@ -234,7 +234,7 @@ body{
   }
 
   @media (min-width: 992px){#padding-needed {
-    padding-top: 30px;
+    padding-top: 50px;
   }}
 
   @media (min-width:768px){
@@ -302,3 +302,19 @@ body{
     width:255px;
     text-align: center !important;
   }}
+
+  @media (min-width:1200px){#padding-hack{
+    padding-top: 65px;
+  }}
+
+  @media (min-width:1200px){#padding-pcb{
+    padding-top: 45px;
+  }}
+
+  @media (min-width:1200px){#padding-mail{
+    padding-top: 45px;
+  }}
+
+  .font-about{
+    font-size: 16px;
+  }
