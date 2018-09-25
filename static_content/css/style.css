@@ -22,7 +22,7 @@ body{
   background-color: #ddd;
 }
 @media (min-width:768px){.navbar-default.scrolled{
-  background:#85929E;
+  background:#85929E !important;
 }}
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
