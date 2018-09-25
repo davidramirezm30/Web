@@ -54,4 +54,5 @@ app.post('/send', urlencodedParser, function (req, res) {
     });
 });
 
-app.listen(3000, () => console.log('Server started...')); 
+//app.listen(8080, () => console.log('Server started...')); 
+app.listen(process.env.PORT || 8080); //Para que funcione en Azure
