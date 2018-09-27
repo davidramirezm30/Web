@@ -361,3 +361,13 @@ body{
     transition: background-color 2s ease-out;
   }
   
+  .icons img{
+    width: 20px;
+    height: 20px;
+  }
+
+  .email-icon img{
+    width: 20px;
+    height: 20px;
+    padding-bottom: 4px;
+  }
