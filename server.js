@@ -7,7 +7,7 @@ var nodemailer = require('nodemailer');
 var urlencodedParser = bodyParser.urlencoded({ extended: false })
 
 app.use(express.static('static_content'));
- 
+
 app.post('/send', urlencodedParser, function (req, res) {
     const output = `
         <p>You have a new contact request</p>
@@ -23,7 +23,7 @@ app.post('/send', urlencodedParser, function (req, res) {
 
     // create reusable transporter object using the default SMTP transport
     let transporter = nodemailer.createTransport({
-        service:'hotmail',
+        service: 'hotmail',
         auth: {
             user: process.env.EMAIL_USER, // generated ethereal user
             pass: process.env.EMAIL_PASSWORD  // generated ethereal password
@@ -50,9 +50,14 @@ app.post('/send', urlencodedParser, function (req, res) {
         //console.log('Message sent: %s', info.messageId);
         //console.log('Preview URL: %s', nodemailer.getTestMessageUrl(info));
         res.redirect("/");
-        
+
     });
+});
+
+app.use(function (req, res, next) {
+    res.status(404).redirect("/");
 });
 
 //app.listen(8080, () => console.log('Server started...')); 
 app.listen(process.env.PORT || 8080); //Para que funcione en Azure
+
