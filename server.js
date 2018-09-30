@@ -55,7 +55,7 @@ app.post('/send', urlencodedParser, function (req, res) {
 });
 
 app.use(function (req, res, next) {
-    res.status(404).redirect("/");
+    res.status(404).redirect("https://davidramirez.azurewebsites.net/"); //Redirects to https
 });
 
 //app.listen(8080, () => console.log('Server started...')); 
