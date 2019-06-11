@@ -271,9 +271,12 @@ textarea.form-control {
     .section {
         padding: 0
     }
-    .navbar-collapse {
-        background: #85929E
+    .navbar {
+        visibility: hidden
     }
+    /*.navbar-collapse {
+        background: #85929E
+    }*/
 }
 
 @media (min-width:992px) {
